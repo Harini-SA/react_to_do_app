@@ -1,0 +1,26 @@
+.todo{
+    width: 600px;
+    min-height: 732px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    margin: auto;
+    margin-top: 174px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 44px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+.todo_header{
+    margin-top: 84px;
+    color: green;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.todo_add{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 45px; 
+}
