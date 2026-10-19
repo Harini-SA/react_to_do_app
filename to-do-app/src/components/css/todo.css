@@ -26,6 +26,7 @@
 }
 .todo_input{
     border-radius: 50px;
+    color:green;
     background-color: white;
     width:570px;
     height: 80px;
