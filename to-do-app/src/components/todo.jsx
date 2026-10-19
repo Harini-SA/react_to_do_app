@@ -7,7 +7,7 @@ function Todo(){
     const inputref = useRef(null);
     const add = () => {
         settodos([...todos,{no:count++, text:inputref.current.value, display:""}])
-        
+        inputref.current.value ="";
     }
     return (
         <div className="todo">
