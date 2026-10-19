@@ -1,5 +1,5 @@
 import './css/todo.css'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 let count = 0
 function Todo(){
@@ -9,6 +9,9 @@ function Todo(){
         settodos([...todos,{no:count++, text:inputref.current.value, display:""}])
         inputref.current.value ="";
     }
+    useEffect(()=>{
+        console.log(todos);
+    },[todos])
     return (
         <div className="todo">
             <div className='todo_header'>to do list</div>
