@@ -12,6 +12,7 @@ function Todo(){
     }
     useEffect(()=>{
         console.log(todos);
+        localStorage.setItem("todos", JSON.stringify(todos))
     },[todos])
     return (
         <div className="todo">
