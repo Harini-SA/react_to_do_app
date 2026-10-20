@@ -9,7 +9,12 @@ function Todo(){
     const add = () => {
         settodos([...todos,{no:count++, text:inputref.current.value, display:""}])
         inputref.current.value ="";
+        localStorage.setItem("todo_count",count)
     }
+    useEffect(()=>{
+        settodos(JSON.parse(localStorage.getItem("todos")));
+        count = localStorage.getItem("todo_count");
+    },[])
     useEffect(()=>{
         console.log(todos);
         localStorage.setItem("todos", JSON.stringify(todos))
