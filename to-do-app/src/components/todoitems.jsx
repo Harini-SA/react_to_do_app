@@ -1,8 +1,8 @@
 import './css/todoitems.css'
-function TodoItems(){
+function TodoItems({no,display,text}){
     return (
-        <div>
-
+        <div className='todoitems'>
+           <ul> <li className='todoitems_text'>{text}</li> </ul>
         </div>
     )
 }
